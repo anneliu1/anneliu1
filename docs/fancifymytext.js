@@ -40,7 +40,7 @@ function makeTextMoo() {
     var words = sentences[i].trim().split(" ");
     var lastWordIndex = words.length - 1;
 
-    if (lastWordIndex >= 0) {
+    if (lastWordIndex >= 0 && words[lastWordIndex] !== "") {
       words[lastWordIndex] += "-Moo";
     }
 
@@ -53,5 +53,3 @@ function makeTextMoo() {
   // Update the text area with the modified text
   textArea.value = text;
 }
-
-
